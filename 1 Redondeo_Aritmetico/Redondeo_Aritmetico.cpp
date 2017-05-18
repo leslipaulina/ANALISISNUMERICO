@@ -12,7 +12,6 @@
 using namespace std;
 float a,b,suma,e1,e2;
 int valor;
-double prueba;
 /*
 * funcion que saca la parte entera de un numero decimal
 *	@numero es la suma de los dos numeros
