@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std; 
+
+int main ()
+{
+	cout <<"\nCalculo de las raices de una funcion aplicando el metodo de la biseccion\n";
+	cout <<"\nIngrese el intervalo inicial [a,b]:" << endl;
+	
+	double a, b, tolerancia;
+	
+	cout << "a = ";
+	cin >> a;
+	
+	cout << "b = ";
+	cin >> b;
+	
+	
+	
+	
+	cin.get();
+	cin.get();
+	return 0;
+}
