@@ -1,70 +1,30 @@
-#include <stdio.h>
-#include <stdiob.h>
-#include <math.h>
+#include<iostream>
+#include<stdio.h>
+#include<conio.h>
 
-double f(double)
-
-int main ()
-{
-	int imax,iter;
-	double xi,xd,ea,em,test,xa,xaold;
-	
-	
-	printf("\nMETODO DE BISECCION\n\n");
-	
-	printf("Introduce el extremo del intervalo por la izquierda\n");
-	scanf("%lf",&xi);
-	printf("Introduce el extremo del intervalo por la derecha\n");
-	scanf("%lf",&xd);
-	printf("Introduce el numero de iteraciones maximas\n");
-	scanf("%d",&imax);
-	printf("Introduce el error minimo del calculo\n");
-	scanf("%lf",&em);
-
-iter=0;
-xa=0
-
-if(f(xi)*f(xd)>0)
-	printf("No hay raiz en ese intervalo\n");
-
-else{ 
-  
-  printf("\nIter	Raiz	Error aprox\n ");
-  
-  do{
-  	
-  	iter++;
-	
-	xaold=xa;
-  	
-  	xa=(xi+xd)/2;
-  	
-  	ea=fabs((xa-xaold)/xa)*100
-  	
-  	test=f(xi)*f(xa);
-  	
-  	if(test<0)
-      	xd=xa;
-      	
-    else if(test>0)
-        xi=xa;
-    
-    else 
-        ea=0;
-        
-    printf("\n%d	%lf		%lf",iter,xa,ea);
-    
-    
-  } while(ea>em %% iter<=imax);
-    
-}
-
-	
-	return 0;
-}
+/*
+*	@autor Leslie Jimenez
+*
+*/
 
 
-double f(double x)
-{
-	return x*x*x+4*x*x-10;
+
+using namespace std;
+double a,b,c;
+
+//funcion principal
+main(){
+	system("cls");
+	system("COLOR 0A");
+	cout<<"\t Metodo de Biseccion\n";
+	cout<<"########################################################\n";
+	cout<<"\t Ecuacion de la forma ax^3+bx^2+cx\n";
+	cout<<"--------------------------------------------------------\n";
+	printf("\nIngresa el valor de a: ");
+	scanf("%f",&a);
+	printf("\nIngresa el valor de b: ");
+	scanf("%f",&b);
+	printf("\nIngresa el valor de c: ");
+	scanf("%f",&c);
+	getch();
 }
